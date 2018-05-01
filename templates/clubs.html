@@ -1,0 +1,108 @@
+{% extends "_bootsrap_layout.html" %}
+{% block title %}
+Atria ISE|Clubs
+{%endblock %}
+{% block body %}
+<div class="bgimg" id="clubs-bg">
+
+        <div class="container-fluid" id = "pg-head">
+
+          <h2 class="text-center text-capitalize text-white font-weight-bold display-4" >Clubs run by dept. of ISE</h2>
+        </div>
+        {% include '_flash.html' %}
+        <br>
+          <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <div class="card" style="margin-bottom: 4px">
+                        <img class="card-img-top img-fluid" src="/static/quizotlcs.jpg" alt="Quizotics Logo" height="100px" width="100px">
+                        <div class="card-body">
+                            <h2 class="card-title text-primary">Quizotics</h2>
+                            <p class="card-text text-white">To promote enhancing the technical knowledge among students, provide a platform for exhibiting their skills and organizing capabilities, and also reward the students in their quest for knowledge while developing their oracy skills.It helps to improve critical thinking and enhance confident communication among students.</p>
+                            <a href="#quiz-contact" class="btn btn-primary" data-toggle="collapse">Contact Information</a>
+                            <div class="collapse" id="quiz-contact">
+                                <p class="card-text text-info">
+                                <br>Faculty In-charge:<br>Dr. Shanthi mahesh-shanthi.mahesh@atria.edu  <br>Kavitha vasanth-kavithavasanth@atria.edu               
+                                <br>Swetha PC-swetha.pc@atria.edu 
+                                <br>Student Coordinators / leaders 
+                                <br>Sujith Surendranath - Mobile:9620446404 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="card" style="margin-bottom: 4px">
+                            <img class="card-img-top" src="/static/tarana.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h2 class="card-title text-primary">Tarana-Leisure Club</h2>
+                                <p class="card-text text-white">To facilitate more leisure activities beyond the academics to make life more enriching and fulfilling in campus. It is responsible for organizing all leisure related activities and also indoor sports activities.</p>
+                                <a href="#tarana-contact" class="btn btn-primary" data-toggle="collapse">Contact Information</a>
+                                <div id="tarana-contact" class="collapse">
+                                  <p class=" card-text text-info "><br>Faculty In-charge: <br>
+                                  Kavitha Vasanth 
+                                  kavitha.vasanth@atria.edu 
+                                  <br>Omprakash B 
+                                  omprakash@atria.edu 
+                                  <br>
+                                  Abhilash 
+                                  abhilash.ab@atria.edu 
+                                  <br>Swetha P C 
+                                  swetha.pc@atria.edu <br>No. of active members 250 Students 4 Faculties </p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="card"style="margin-bottom: 4px">
+                        <img class="card-img-top" src="/static/extempora.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Extempora - The debate club</h5>
+                            <p class="card-text text-white">Focuses on giving students all abilities in a fun way of developing their oral skills It helps to improve the critical thinking and confident communication among students.</p>
+                            <a href="#extempora-contact" class="btn btn-primary" data-toggle="collapse">Contact Information</a>
+                            <div id="extempora-contact" class="collapse">
+                                <p class="card-text text-info"><br> Faculty In-charge: <br>
+                                    Kavitha S Patil 
+                                    kavitha.patil@atria.edu 
+                                    <br> Ayesha taranum 
+                                    ayesha.taranum@atria.edu  
+                                    <br>Sheba J 
+                                    sheba.jebakani@atria.edu 
+                                    <bold><br>Student Coordinators / leaders: </bold>
+                                    <br>
+                                    Pruthviraj 
+                                    Mobile:7760009533
+                                    <br>Ishu Tiwari
+                                    Mobile:9880986063 
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <br>
+      <footer>
+          <div class="footer-copyright py-2 text-center ">
+              <br>
+              <span class="text-white font-weight-bold"> &copy; 2018 Copyright: Made with
+      </span><i class="fas fa-heart text-danger"></i><span class="text-white font-weight-bold"> by ISE students</span>
+  
+          </div>
+  
+      </footer>
+
+       
+       <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+       <script>
+       window.sr = ScrollReveal({mobile: true});
+       sr.reveal('.navbar', {duration: 1000,origin:'top'});
+       sr.reveal('.card',{opacity:0,duration:1000});
+       sr.reveal('#pg-head',{origin:'top',duration:'1000',distance:'500px'});
+       sr.reveal('.card a',{duration:1000, orgin:'bottom',distance:'150px'});
+       
+       </script>
+      
+{%endblock%}

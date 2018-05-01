@@ -1,0 +1,108 @@
+
+  .bgimg{
+   background-color: black;
+    height: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+  }
+  #usn input{
+    text-transform:uppercase;
+  }
+  #bgimg-1{
+    background-image: url("laptop-white.jpg");
+  }
+  #register{
+    background-image: url("register.jpeg");
+  }
+  #bgimg-2{
+    background-image: url("About-bnw.jpeg");
+  }
+  #bgimg-3{
+    background-image: url("sunset.jpeg");
+  }
+  
+  #clubs-bg{
+    background-image: url("avatar.jpg");
+  }
+  
+  .pad-section{
+  padding: 30px 0 0 0;
+  }
+  .navbar, footer{
+      border-bottom:#008ed6 3px solid;
+      background-color: black;
+      
+      font-size: 20px;
+      
+    }
+  .navbar .navbar-brand{
+    font-size: 25px;
+    color: red;
+    font-weight: bold;
+    font-family: 'Arvo', serif;
+  }
+  
+  #showcase{
+    min-width:80vw;
+  }
+  
+  #showcase #showcase-color{
+    background-color: rgba(0,0,0,0.7);
+    color: #fff;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 50px 20px;
+    
+  }
+  #btn-wrapper{
+   display: flex;
+   flex-flow: wrap;
+    
+    justify-content: center;
+    align-items: center;
+  }
+  #btn-wrapper button{
+    margin: 2px;
+  }
+  /* .bg2-main{
+    display: flex;
+    align-items: center;
+    background-color: rgba(0,0,0,0.7);
+    padding: 10px;
+    border-radius: 5px;
+  } */
+  
+  footer{
+    border-top:#008ed6 3px solid;
+    opacity: 0.95;
+  }
+  #pg-head{
+    width: 100%; 
+    border-radius: 5px ;
+    background-color: rgba(0, 0, 0,0.3);
+    padding: 10px;
+    margin-top:10px;
+    
+    text-shadow: 1px 1px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  @media (max-width: 767px) {
+    #bgimg-1{
+      background-image: url("bgrnd-mob.jpg");
+    }
+    
+  }
+  
+ 
+  

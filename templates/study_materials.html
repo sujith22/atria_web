@@ -1,0 +1,178 @@
+{% extends "_bootsrap_layout.html" %}
+{% from '_formhelpers.html' import render_field %}
+{% block title %}
+Atria ISE|Study Materials
+{%endblock %}
+{% block body %}
+
+<div  id="bgimg-3" class="bgimg pad-section" >
+            <div class="container-fluid" id = "pg-head">
+                <h2 class="text-center text-capitalize text-white font-weight-bold display-3" >Study Materials</h2>
+            </div>
+            <br>
+            <div class="container-fluid">
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title text-danger text-center"><h2>III Semester</h2></div>
+                            <hr class="bg-secondary">
+                            <ul class="card-text list-group">
+                                <li  class="list-group-item text-center list-group-item-dark font-weight-bold text-primary" > <a class="flex_1" href="study_material.html"> Mathematics-3 </a> </li>
+                                <li  class="list-group-item text-center font-weight-bold"> <a class="flex_1" href="study_material.html">ADE</a> </li> 
+                                <li  class="list-group-item  text-center font-weight-bold list-group-item-dark text-primary"><a class="flex_1" href="study_material.html">DS</a> </li> 
+                                <li  class="list-group-item text-center font-weight-bold"><a class="flex_1"  href="study_material.html">CO</a> </li>
+                                <li  class="list-group-item  text-center  font-weight-bold list-group-item-dark text-primary"><a class="flex_1" href="study_material.html list-group-item text-center bg-dark text-primary">UNIX</a> </li>
+                                <li  class="list-group-item text-center font-weight-bold"> <a class="flex_1" href="study_material.html">DMS</a> </li>           
+                            </ul>
+        
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                            
+                                  <!-- Card 2 -->
+                <div class="col-sm-12 col-md-6 col-lg-4">    
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title text-center text-danger"><h2>IV Semester</h2></div>
+                            <hr class="bg-secondary" style="font-size:10px; font-weight:bold;">
+                            <ul class=" card-text list-group">
+                                <li  class="list-group-item text-center font-weight-bold"><a class="flex_1" href="study_material.html">Mathematics-4</a></li>
+                                <li  class="list-group-item text-center font-weight-bold list-group-item-dark text-primary"><a class="flex_1" href="study_material.html">SE</a> </li>
+                                <li  class="list-group-item text-center font-weight-bold"><a class="flex_1" href="study_material.html">ADA</a> </li> 
+                                <li  class="list-group-item text-center  font-weight-bold list-group-item-dark text-primary"><a class="flex_1" href="study_material.html">MP</a> </li>
+                                <li  class="list-group-item  font-weight-bold text-center"><a class="flex_1" href="study_material.html">OOC</a> </li>
+                                <li  class="list-group-item font-weight-bold list-group-item text-center list-group-item-dark text-primary"><a class="flex_1" href="study_material.html">DC</a> </li>           
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                
+                                 <!-- Card 3 -->
+                <div class="col-sm-12 col-md-6 col-lg-4">                          
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title text-danger font-weight-bold text-center"><h2>V Semester</h2></div>
+                            <hr class="bg-secondary" style="font-size:10px; font-weight:bold;">
+                            <ul class=" card-text list-group">
+                                <li  class="list-group-item font-weight-bold text-center list-group-item-dark text-primary"><a class="flex_1" href="study_material.html">ME</a>
+                                </li>
+                                <li  class="list-group-item font-weight-bold text-center"><a class="flex_1" href="study_material.html">CN</a>
+                                </li>
+                                <li  class="list-group-item font-weight-bold text-center list-group-item-dark text-primary"> <a class="flex_1" href="study_material.html">DBMS</a>
+                                </li> 
+                                <li  class="list-group-item font-weight-bold text-center"> <a class="flex_1" href="study_material.html">FLAT</a>
+                                </li>
+                                <li  class="list-group-item font-weight-bold text-center list-group-item-dark text-primary"> <a class="flex_1" href="study_material.html">ADV JAVA</a>
+                                </li>
+                                <li  class="list-group-item font-weight-bold text-center  "><a class="flex_1" href="study_material.html">Cloud Computing</a>
+                                </li>           
+                            </ul>
+                        </div>
+                    </div> <br>
+                </div>
+        
+            
+                                 <!-- Card 4 -->
+                <div class="col-sm-12 col-md-6 col-lg-4"> 
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title text-danger font-weight-bold text-center"><h2>VI Semester</h2></div>
+                            <hr class="bg-secondary" style="font-size:10px; font-weight:bold;">
+                            <ul class="card-text list-group ">
+                            <li  class="list-group-item text-center text-center  font-weight-bold list-group-item-dark text-primary "> <a class="flex_1" href="study_material.html">CNS</a>
+                            </li>
+                            <li  class="list-group-item text-center font-weight-bold"> <a class="flex_1" href="study_material.html">FS</a>
+                            </li>
+                            <li  class="list-group-item text-center  font-weight-bold list-group-item-dark text-primary"><a class="flex_1" href="study_material.html">ST</a>
+                            </li> 
+                            <li  class="list-group-item text-center font-weight-bold"><a class="flex_1" href="study_material.html">OS</a>
+                            </li>
+                            <li  class="list-group-item text-center  font-weight-bold list-group-item-dark text-primary"><a class="flex_1" href="study_material.html">OR</a>
+                            </li>
+                            <li  class="list-group-item text-center font-weight-bold"><a class="flex_1" href="study_material.html">Python</a>
+                            </li>           
+                        </ul>
+                    </div>
+                </div> <br>
+            </div>
+        
+                                <!-- Card 5 -->
+            <div class="col-sm-12 col-md-6 col-lg-4">                 
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title text-danger font-weight-bold text-center"><h2>VII Semester</h2></div>
+                        <hr class="bg-secondary" style="font-size:10px; font-weight:bold;">
+                        <ul class="card-text list-group">
+                            <li  class="list-group-item font-weight-bold text-center"><a class="flex_1" href="study_material.html">OMD</a>
+                            </li>
+                            <li  class="list-group-item text-center  font-weight-bold list-group-item-dark text-primary"><a class="flex_1" href="study_material.html">IS</a>
+                            </li>
+                            <li class="list-group-item font-weight-bold text-center"><a class="flex_1" href="study_material.html">Data Mining</a></li> 
+                            <li  class="list-group-item text-center  font-weight-bold list-group-item-dark text-primary"><a class="flex_1" href="study_material.html">Adv DBMS</a>
+                            </li>
+                            <li  class="list-group-item font-weight-bold text-center"><a class="flex_1" href="study_material.html">Adv SE</a>
+                            </li>
+                            <li  class="list-group-item text-center  font-weight-bold list-group-item-dark text-primary"><a class="flex_1" href="study_material.html">Game Theory</a>
+                            </li>           
+                        </ul>
+                    </div>
+                </div> <br>
+            </div>
+        
+                                  <!-- Card 6 -->
+            <div class="col-sm-12 col-md-6 col-lg-4">       
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title text-danger font-weight-bold text-center"><h2>VIII Semester</h2></div>
+                        <hr class="bg-secondary" style="font-size:10px; font-weight:bold;">
+                        <ul class="card-text list-group">
+                            <li  class="list-group-item text-center  font-weight-bold list-group-item-dark text-primary">
+                            <a class="flex_1" href="study_material.html">SA</a>
+                            </li>
+                            <li  class="list-group-item font-weight-bold text-center">
+                            <a class="flex_1" href="study_material.html">SMS</a>
+                            </li>
+                            <li  class="list-group-item text-center  font-weight-bold list-group-item-dark text-primary">
+                            <a class="flex_1" href="study_material.html">INS</a>
+                            </li> 
+                            <li  class="list-group-item text-center font-weight-bold">
+                            <a class="flex_1" href="study_material.html">CGC</a>
+                            </li>  
+                            <li  class="list-group-item text-center  font-weight-bold list-group-item-dark text-primary">
+                            <a class="flex_1" href="study_material.html">DSS</a>
+                            </li>        
+                        </ul>
+                    </div>
+                </div> <br>
+            </div>
+        </div>
+    </div>
+        
+                              <footer>
+                                    <div class="footer-copyright py-2 text-center ">
+                                      <br>
+                                      <span class = "text-white font-weight-bold"> © 2018 Copyright: Made with
+                                      </span><i class="fas fa-heart text-danger"></i><span class = "text-white font-weight-bold"> by ISE students</span>   
+                              
+                                    </div>
+                      
+                    </footer>
+                </div>
+              
+                
+                <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+                
+                <script>
+                  window.sr = ScrollReveal({mobile: true});
+                  sr.reveal('#pg-head',{origin:'top',duration:'1000',distance:'500px'});
+                  sr.reveal('.card', { duration: 2000 }, 100);
+            </script>        
+                
+        
+        </body>
+        </html>
+{%endblock %}

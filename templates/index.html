@@ -1,0 +1,116 @@
+{% extends "_bootsrap_layout.html" %}
+{% from '_formhelpers.html' import render_field %}
+{% block title %}
+Atria ISE|HomePage
+{%endblock %}
+{% block body %}
+<div class="bgimg" id="bgimg-1">
+    {% include '_flash.html' %}
+        <div class="container" id="showcase">
+            <div id="showcase-color">
+                <!-- <img src="logo-atria.jpg" alt="" class="img-fluid mx-auto d-block" width="75%"> -->
+                <h2 class="display-4 text-center text-danger">Atria Institute Of Technology</h2>
+                <br>
+
+                <div id="btn-wrapper">
+                    <div> 
+                        <button type="button" class="btn btn-outline-primary btn-lg" data-toggle="modal" data-target="#contact-us">Contact Us</button>
+                    </div>
+                    <div> 
+                        <a href="/register"><button type="button" class="btn btn-outline-primary btn-lg">Sign Up</button></a>
+                    </div>
+                    <div> 
+                        <button type="button" class="btn btn-outline-primary btn-lg" data-toggle="modal" data-target="#myModal">Headlines</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-2 col-lg-4"></div>
+            <div class="col-sm-12 col-md-8 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="text-center text-primary font-weight-bold">Please Sign In</h2>
+                        <p class="text-center text-white">To access Study Materials</p>
+                        <hr class="bg-secondary">
+
+                        <img class="profile-img mx-auto d-block" src="/static/avatar.png" alt="Atria logo" height="200px" width="200px" style=" border-radius: 50%;">
+        
+                        <form class="form-signin" method="POST" action="">
+                            {{ form.hidden_tag() }}
+                            <div class="form-group text-white" id="usn">
+                                {{render_field(form.usn,class_="form-control")}}
+                            </div>
+                            <div class="form-group text-white">
+                                {{render_field(form.password,class_="form-control")}}
+                            </div>
+                            <input class="btn btn-lg btn-primary btn-block" type="submit" value="Sign in">
+                            <a href="/forgot" class="pull-right need-help text-white">Forgot Password?</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-2 col-lg-4"></div>
+        </div>
+    </div>      
+ 
+<br>
+</div>
+        
+<!-- end of bgimg-1 -->
+<div class="bgimg" id="bgimg-2">
+    <div id="section-2" style="padding-top:100px;padding-bottom:100px; min-height:90vh;">
+        <div class="row">
+            <div class="col-sm-12 col-md-2"></div>
+            <div class="col-sm-12 col-md-8">
+                <div class="card">
+                    <div class="card-body text-white">
+                        <h2 class="text-white font-weight:bold display-4">
+                            About
+                        </h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit nobis alias ipsa veritatis accusantium repellat ut laudantium quidem cupiditate. Nostrum dicta labore voluptate impedit tempora incidunt exercitationem officia, voluptatum assumenda.</p>
+                        <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi quas reiciendis autem, repudiandae voluptatibus impedit porro adipisci qui quidem facilis dicta ratione veniam possimus eveniet dolores itaque delectus. Quidem, perspiciatis.
+                        </p>
+                    </div>
+                </div>
+            </div>   
+            <div class="col-sm-12 col-md-2"></div> 
+        </div>
+    </div>
+</div>
+
+    <footer>
+        <div class="footer-copyright py-2 text-center ">
+            <br>
+            <span class="text-white font-weight-bold"> © 2018 Copyright: Made with</span>
+            <i class="fas fa-heart text-danger"></i>
+            <span class="text-white font-weight-bold"> by ISE students</span>
+
+        </div>
+
+    </footer>
+
+            
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script>
+  window.sr = ScrollReveal({mobile: true});
+  
+  // sr.reveal('#bgimg-1',{opacity:0,duration:1500});
+  sr.reveal('.navbar', {duration: 1000,origin:'top'});
+  // sr.reveal('.navbar li', {duration: 1000,origin:'top'},300);
+  sr.reveal('#showcase',{duration:1000, orgin:'top', distance:'300px'});
+  sr.reveal('#showcase button',{duration:1000, orgin:'bottom',distance:'300px'},500);
+  sr.reveal('#coverr',{opacity:0,duration:1500})
+  // sr.reveal('#coverr button',{opacity:0,duration:1500, origin:'top',delay:500})
+  sr.reveal('#section-2',{opacity:0, duration:2000})
+  
+</script>
+
+{%endblock%}

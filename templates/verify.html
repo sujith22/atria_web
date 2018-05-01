@@ -1,0 +1,49 @@
+{% extends "_bootsrap_layout.html" %}
+{% from '_formhelpers.html' import render_field %}
+{% block title %}
+Atria ISE|Verify Code
+{%endblock %}
+{% block body %}
+<div class="bgimg" id="register">
+        
+    <div class="container-fluid pad-section">
+            {% include '_flash.html' %}
+        <div class="row" style="margin-top:100px;">
+            <div class="col-sm-12 col-md-3"> </div>
+            <div class="col-sm-12 col-md-6">
+                    <div class="card" >
+                            <div class="card-body text-white">
+                            <h1 class="text-primary text-center display-3 font-weight-bold">Verify the code</h1>
+                            <p class="text-info lead text-center">
+                                Enter the 10 digit alpha-numerical code sent to ur email
+                            </p>
+                           
+                                <form action="" method="POST">
+                                    {{ form.hidden_tag() }}
+                                    
+                                    <div class="form-group">
+                                        {{render_field(form.code,class_="form-control")}}
+                                    </div>
+                                        <input type="submit" value="Next" class="btn btn-block btn-primary">
+                                    </div> 
+                                </form>
+                            </div>
+                    </div>    
+            </div>
+            <div class="col-sm-12 col-md-3"> </div>
+        </div>
+    </div>
+   
+    
+    <footer>
+            <div class="footer-copyright py-2 text-center ">
+                <br>
+                <span class="text-white font-weight-bold"> © 2018 Copyright: Made with</span>
+                <i class="fas fa-heart text-danger"></i>
+                <span class="text-white font-weight-bold"> by ISE students</span>
+    
+            </div>
+    
+    </footer>
+    </div>
+    {%endblock%}

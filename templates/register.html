@@ -1,0 +1,57 @@
+{% extends "_bootsrap_layout.html" %}
+{% from '_formhelpers.html' import render_field %}
+{% block title %}
+Atria ISE|Register
+{%endblock %}
+{% block body %}
+<div class="bgimg" id="register">
+<div class="container-fluid pad-section">
+        {% include '_flash.html' %}
+    <div class="row">
+        <div class="col-sm-12 col-md-3"> </div>
+        <div class="col-sm-12 col-md-6">
+                <div class="card" >
+                        <div class="card-body text-white">
+                        <h1 class="text-primary text-center display-3 font-weight-bold">Register</h1>
+                       
+                            <form action="" method="POST">
+                                {{ form.hidden_tag() }}
+                                <div class="form-group">
+                                    {{render_field(form.name,class_="form-control")}}
+                                </div>
+                                <div class="form-group">
+                                    {{render_field(form.email,class_="form-control")}}
+                                </div>
+                                <div class="form-group" id="usn">
+                                    {{render_field(form.usn,class_="form-control")}}
+                                </div>
+                                <div class="form-group">
+                                    {{render_field(form.password,class_="form-control")}}
+                                </div>
+                                <div class="form-group">
+                                    {{render_field(form.Confirm,class_="form-control")}}
+                                </div>
+                                <div>
+                                    <input type="submit" value="Register" class="btn btn-block btn-primary">
+                                </div> 
+                            </form>
+                        </div>
+                </div>    
+        </div>
+        <div class="col-sm-12 col-md-3"> </div>
+    </div>
+</div>
+<br>
+
+<footer>
+        <div class="footer-copyright py-2 text-center ">
+            <br>
+            <span class="text-white font-weight-bold"> © 2018 Copyright: Made with</span>
+            <i class="fas fa-heart text-danger"></i>
+            <span class="text-white font-weight-bold"> by ISE students</span>
+
+        </div>
+
+</footer>
+</div>
+{%endblock%}
